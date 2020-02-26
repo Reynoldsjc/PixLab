@@ -54,6 +54,34 @@ public class PictureTester
     water.explore();
   }
 
+  public static void testMirrorVerticalRightToLeft(){
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+
+  public static void testMirrorHorizontal(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontal();
+    redMotorcycle.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop(){
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontalBotToTop();
+    redMotorcycle.explore();
+  }
+
+  public static void testMirrorDiagonal(){
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -93,7 +121,7 @@ public class PictureTester
     //testKeepOnlyGreen();
     // testNegate();
     // testGrayscale();
-    testFixUnderwater();
+    // testFixUnderwater();
     // testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
@@ -109,5 +137,9 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+    // testMirrorVerticalRightToLeft();
+    // testMirrorHorizontal();
+    // testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
   }
 }
